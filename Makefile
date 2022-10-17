@@ -5,7 +5,7 @@ help:	## display this help message
 .PHONY: help
 
 build:	## build the container image
-	docker build -t build-foundry .
+	docker build -t contracts-builder .
 
 run:	## run the image container interactivelly
-	docker run --rm -it build-foundry
+	docker run --rm -it contracts-builder
