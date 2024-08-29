@@ -13,8 +13,8 @@ RUN echo "source ~/.cargo/env" > ~/.bashrc
 RUN source ~/.bashrc && \
     cargo install svm-rs && \
     svm install 0.7.6 && \
-    svm install 0.8.20 && \
-    svm use 0.8.20 && \
+    svm install 0.8.24 && \
+    svm use 0.8.24 && \
     cargo install solstat
 
 RUN curl -L https://foundry.paradigm.xyz | bash
