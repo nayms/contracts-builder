@@ -18,7 +18,7 @@ RUN source ~/.bashrc && \
     cargo install solstat
 
 RUN curl -L https://foundry.paradigm.xyz | bash
-RUN source ~/.bashrc && foundryup
+RUN source ~/.bashrc && foundryup -v nightly-7f0f5b4c1aa75dc4fd2eb15aca9757491d885902
 
 # Update PATH to include foundry
 ENV PATH="/root/.cargo/bin:/root/.foundry/bin:${PATH}"
