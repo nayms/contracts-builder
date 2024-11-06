@@ -1,6 +1,6 @@
 FROM node:lts-slim
 
-LABEL org.opencontainers.image.source https://github.com/nayms/contracts-builder
+LABEL org.opencontainers.image.source=https://github.com/nayms/contracts-builder
 
 # setup system dependencies
 RUN apt update && apt install -y g++ make curl git jq python3 python3-pip build-essential
